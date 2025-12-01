@@ -5,13 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Combustión In Situ - Santhal Field S-18</title>
     <link rel="icon" href="logo.jpeg" type="image/png">
-    <!-- Tailwind CSS para diseño moderno y responsivo -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Fuentes de Google -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Montserrat:wght@700;900&display=swap" rel="stylesheet">
     
     <style>
-        /* --- ESTILOS PERSONALIZADOS (Lo que iría en styles.css) --- */
         body {
             font-family: 'Roboto', sans-serif;
             scroll-behavior: smooth;
@@ -21,7 +18,6 @@
             font-family: 'Montserrat', sans-serif;
         }
 
-        /* Gradiente temático estilo "Petróleo y Fuego" */
         .bg-gradient-petro {
             background: linear-gradient(135deg, #1a1a1a 0%, #2c3e50 50%, #d35400 100%);
         }
@@ -47,7 +43,6 @@
             left: 0;
         }
 
-        /* Efectos para imágenes */
         .img-shadow {
             box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.5), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s ease;
@@ -57,7 +52,6 @@
             transform: scale(1.02);
         }
 
-        /* Navegación */
         .nav-link {
             position: relative;
         }
@@ -78,7 +72,6 @@
 </head>
 <body class="bg-gray-50 text-gray-800">
 
-    <!-- NAVEGACIÓN -->
     <nav class="bg-gray-900 text-white sticky top-0 z-50 shadow-lg">
         <div class="container mx-auto px-4 py-4 flex justify-between items-center">
             <div class="text-2xl font-bold text-orange-500">CIS PROYECTO</div>
@@ -92,7 +85,6 @@
         </div>
     </nav>
 
-    <!-- SECCIÓN 1: PORTADA / HERO -->
     <header id="inicio" class="bg-gradient-petro text-white min-h-screen flex items-center relative overflow-hidden">
         <div class="absolute inset-0 bg-black opacity-50"></div>
         <div class="container mx-auto px-4 relative z-10 grid md:grid-cols-2 gap-8 items-center">
@@ -115,7 +107,6 @@
         </div>
     </header>
 
-    <!-- SECCIÓN 2: ¿QUÉ ES CIS? -->
     <section id="concepto" class="py-20 bg-white">
         <div class="container mx-auto px-4">
             <div class="grid md:grid-cols-2 gap-12 items-center">
@@ -143,7 +134,6 @@
                     </ul>
                 </div>
                 <div>
-                    <!-- Imagen sugerida: image_033c41.jpg (Zonas de combustión) -->
                     <img src="imagen2.jpeg" alt="Zonas de Combustión" class="rounded shadow-lg w-full img-shadow" onerror="this.src='https://placehold.co/600x400/eee/333?text=Esquema+Zonas+Combustion'">
                     <p class="text-center text-sm text-gray-500 mt-2">Esquema de zonas: Combustión, Coque y Condensación.</p>
                 </div>
@@ -151,7 +141,6 @@
         </div>
     </section>
 
-    <!-- SECCIÓN 3 & 4: TIPOS Y FUNCIONAMIENTO -->
     <section class="py-20 bg-gray-100">
         <div class="container mx-auto px-4">
             <div class="text-center mb-16">
@@ -160,24 +149,20 @@
             </div>
 
             <div class="grid md:grid-cols-3 gap-8 mb-16">
-                <!-- Card 1 -->
                 <div class="bg-white p-8 rounded-lg shadow-md border-t-4 border-orange-500 hover:-translate-y-2 transition duration-300">
                     <h3 class="text-xl font-bold mb-4">CIS Convencional</h3>
                     <p class="text-gray-600 text-sm">El aire se inyecta y el frente de combustión avanza <strong>desde el inyector hacia el productor</strong>. Es el método más común.</p>
                 </div>
-                <!-- Card 2 -->
                 <div class="bg-white p-8 rounded-lg shadow-md border-t-4 border-orange-500 hover:-translate-y-2 transition duration-300">
                     <h3 class="text-xl font-bold mb-4">Combustión Inversa</h3>
                     <p class="text-gray-600 text-sm">El frente avanza en <strong>dirección contraria</strong> al flujo de aire. Generalmente usado solo para encendido y análisis.</p>
                 </div>
-                <!-- Card 3 -->
                 <div class="bg-white p-8 rounded-lg shadow-md border-t-4 border-orange-500 hover:-translate-y-2 transition duration-300">
                     <h3 class="text-xl font-bold mb-4">Húmeda vs Seca</h3>
                     <p class="text-gray-600 text-sm"><strong>Seca:</strong> Solo aire.<br><strong>Húmeda:</strong> Aire + Agua para aumentar la eficiencia térmica y distribuir mejor el calor.</p>
                 </div>
             </div>
 
-            <!-- Explicación técnica paso a paso -->
             <div class="bg-white rounded-xl shadow-xl overflow-hidden">
                 <div class="grid md:grid-cols-2">
                     <div class="p-8 md:p-12 bg-gray-800 text-white flex flex-col justify-center">
@@ -202,7 +187,6 @@
                         </ol>
                     </div>
                     <div class="relative h-64 md:h-auto">
-                        <!-- Imagen sugerida: image_033c20.png (Corte transversal yacimiento) -->
                         <img src="imagen3.jpeg" alt="Proceso CIS transversal" class="absolute inset-0 w-full h-full object-cover" onerror="this.src='https://placehold.co/600x600/222/orange?text=Diagrama+Flujo+CIS'">
                     </div>
                 </div>
@@ -210,7 +194,6 @@
         </div>
     </section>
 
-    <!-- SECCIÓN 6 & 8: LA MAQUETA -->
     <section id="maqueta" class="py-20 bg-white">
         <div class="container mx-auto px-4">
             <div class="flex flex-col md:flex-row items-start gap-12">
@@ -234,8 +217,6 @@
                     <p class="text-gray-600 mb-2">En la simulación, el aire inyectado empuja los fluidos y el colorante que representa el petróleo fluye visiblemente hacia el pozo productor, demostrando la mejora en la movilidad.</p>
                 </div>
                 <div class="md:w-1/2">
-                    <!-- Espacio para FOTOS REALES DE TU MAQUETA si las tienes, o usar una imagen genérica del proceso -->
-                    <!-- Usaré image_033c3c.jpg como representación visual del modelo -->
                     <div class="grid gap-4">
                         <img src="maqueta.jpeg" alt="Representación Modelo" class="rounded-lg shadow-lg w-full img-shadow" onerror="this.src='https://placehold.co/600x400/eee/333?text=Foto+Maqueta+1'">
                         <div class="bg-gray-800 text-white p-4 rounded text-center">
@@ -247,7 +228,6 @@
         </div>
     </section>
 
-    <!-- SECCIÓN 7: CASO DE ESTUDIO -->
     <section id="caso" class="py-20 bg-gradient-to-br from-gray-900 to-gray-800 text-white">
         <div class="container mx-auto px-4 text-center">
             <h2 class="text-3xl font-bold mb-8 text-orange-500">Caso de Éxito: Santhal Field – Pozo S-18</h2>
@@ -273,12 +253,10 @@
         </div>
     </section>
 
-    <!-- SECCIÓN 10: GALERÍA -->
     <section id="galeria" class="py-20 bg-white">
         <div class="container mx-auto px-4">
             <h2 class="text-3xl font-bold text-center mb-12 text-gray-900">Galería del Proyecto</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <!-- Mostrando todas las imágenes proporcionadas -->
                 <div class="group relative overflow-hidden rounded-lg shadow-lg cursor-pointer">
                     <img src="1.jpeg" alt="Diagrama General" class="w-full h-64 object-cover transform transition duration-500 group-hover:scale-110" onerror="this.src='https://placehold.co/400x300?text=Imagen+1'">
                     <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-60 transition duration-300 flex items-center justify-center">
@@ -298,7 +276,6 @@
                     </div>
                 </div>
                 <div class="group relative overflow-hidden rounded-lg shadow-lg cursor-pointer">
-                    <!-- Imagen adicional sugerida: image_033c9a.jpg -->
                     <img src="4.jpeg" alt="Proceso ONGC" class="w-full h-64 object-cover transform transition duration-500 group-hover:scale-110" onerror="this.src='https://placehold.co/400x300?text=Imagen+4'">
                     <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-60 transition duration-300 flex items-center justify-center">
                         <span class="text-white font-bold opacity-0 group-hover:opacity-100">Diagrama de Proceso</span>
@@ -314,19 +291,16 @@
             Tu navegador no soporta la etiqueta de video.
                 </video>
             <div class="absolute inset-0 bg-black bg-opacity-0 flex items-center justify-center">
-            <!-- <span class="text-white font-bold opacity-100">Video de la Simulación</span> -->
              </div>
             </div>
             </div>
         </div>
     </section>
 
- <!-- SECCIÓN: FOOTER FINAL EXTENDIDO -->
 <footer class="bg-[#0f172a] text-gray-300 py-12 border-t-4 border-orange-600">
     <div class="container mx-auto px-4">
         <div class="grid md:grid-cols-2 gap-16">
             
-            <!-- Lado Izquierdo: CONCLUSIONES DETALLADAS -->
             <div class="text-left">
                 <h4 class="text-white text-xl font-bold mb-6 border-b border-gray-700 pb-2">Conclusiones Generales</h4>
                 <p class="text-sm leading-relaxed text-gray-400 mb-4 text-justify">
@@ -340,7 +314,6 @@
                 </p>
             </div>
 
-            <!-- Lado Derecho: CRÉDITOS DEL PROYECTO -->
             <div class="text-right flex flex-col justify-center">
                 <h4 class="text-white text-xl font-bold mb-2">Créditos del Proyecto</h4>
                 <h5 class="text-orange-500 font-bold text-lg mb-4">Ingeniería Petrolera</h5>
